@@ -1,3 +1,28 @@
+/*
+===============================================================================
+DDL Script: Create Silver Tables
+===============================================================================
+
+📌 Script Purpose:
+    These tables are derived from the 'bronze' layer, which contains raw data. 
+
+🧠 Purpose of the Silver Layer:
+    The Silver Layer is designed to hold cleaned and standardized data.
+    
+    Key points:
+    - Tracks data cleaning and transformation progress
+    - Adds the column `dwh_create_date` to capture the timestamp when records enter the silver layer
+    - Ensures the data is structured, consistent, and ready for analytics or further enrichment in the Gold Layer
+
+⚠️ Warning:
+    This script does NOT check for the existence of tables before creating them.
+    If any of the tables already exist in the 'silver' schema, the script will fail.
+    
+    👉 To avoid errors, either:
+       - Manually drop the existing tables before running this script, or
+       - Add `IF OBJECT_ID(...) IS NOT NULL DROP TABLE ...` before each `CREATE TABLE` statement.
+===============================================================================
+*/
 
 
 CREATE TABLE silver.crm_cust_info (
