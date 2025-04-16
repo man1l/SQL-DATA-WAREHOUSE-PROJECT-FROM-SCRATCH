@@ -10,6 +10,8 @@ This project walks through building a scalable data warehouse solution using the
 - **Data Ingestion (Bronze Layer):** Loading raw data directly from CSV files into SQL Server.
 - **Data Transformation (Silver Layer):** Cleaning, standardizing, and preparing data for analysis.
 - **Data Modeling (Gold Layer):** Creating a business-friendly star schema for analytical queries and reporting.
+-  ![Data Warehouse Architecture](docs/DWH Architecture.drawio.png)
+
 
 ## 📊 Key Features
 
